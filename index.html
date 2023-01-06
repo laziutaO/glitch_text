@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="lab6.css" />
+    <script src="lab6.js"></script>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <div id="rightDiv2">
+      <h2 id = "topHeader">Heading</h2>
+      <div id = "div1InDiv2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex animi incidunt assumenda ipsam! Error iste earum porro impedit et dolor.
+      </div>
+    </div>
+    <?php include "lab6.php";?>
+    <div id ="rightDiv3">
+      <div id = "container">
+         <h2 id = "glitch_text" data-text="Text Glitch">Text Glitch 
+         </h2></div>
+         
+        <form id = "glitchForm" action = "lab6.php" method="post">
+          <label id = "formDiv3Label">Input text for glitch here:</label><br>
+          <input type="text" maxlength = "20" class="glitchButton" id="newGlText" name = "text" value = "text glitch">
+          <input type="button" value="Glitch text!" class="glitchButton" onclick="changeText()"><br>
+          <label id = "fontSizeLabel">Change font size here:</label><br>
+          <input type="number" maxlength = "2" min = "1" max = "72" class="glitchButton" id = "fontSize" name = "fontSize" value = "36">
+          <input type="button" value="Change font" class="glitchButton" onclick="changeSize(72)"><br>
+          <label id = "fontLabel">Change letter spacing here:</label><br>
+          <select id="spacing" onclick="changeSpacing()" name = "letterSpacing" value = "3px">
+            <option value="1px">1px</option>
+            <option value="2px">2px</option>
+            <option value="3px">3px</option>
+            <option value="5px">5px</option>
+            <option value="8px">8px</option>
+            <option value="12px">12px</option>
+            <option value="15px">15px</option>
+            <option value="20px">20px</option>
+          </select><br>
+          <label id = "color1Label">Change color 1:</label><br>
+          <input type= "color" value="#0000ff" id = "color1" name = "color1">
+          <input type="button" value="Change first color" class="glitchButton" onclick="changeColor('color1', '--glitchBeforeColor')"><br>
+          <label id = "color2Label">Change color 2:</label><br>
+          <input type= "color" value="#ffff00" id = "color2" name = "color2">
+          <input type="button" value="Change second color" class="glitchButton" onclick="changeColor('color2', '--glitchAfterColor')"><br>
+          <label id = "animationLabel">Change length of animation here:</label><br>
+          <input type="number" maxlength = "2" min = "1" class="glitchButton" id = 'animLength' name = "animLength" value = "3">
+          <input type="button" value="Change animation length" class="glitchButton" onclick="changeAnimationTime()"><br>
+          <input type="submit" value="Save" class="glitchButton"><br>
+        </form>
+        <ul id = "div3List"></ul>
+    </div>
+    
+    <div id="leftDiv1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laudantium enim nam voluptatum. Nesciunt repudiandae inventore tenetur suscipit iusto odio excepturi fugit voluptatum minima quo autem natus deserunt, beatae quibusdam placeat dolorum corrupti consequatur veniam. Maiores blanditiis corporis, quisquam labore quas soluta eligendi, nihil laudantium doloribus tenetur perspiciatis esse architecto, fuga officia tempore ab? Eos sint, ipsum nobis necessitatibus, non quidem pariatur vitae vel alias repellat molestiae, nam quae suscipit blanditiis labore ut ullam est hic sunt ducimus recusandae delectus. Vero voluptas sed ab voluptatibus minus atque provident! Amet officia laboriosam iure blanditiis dolorem obcaecati dolorum harum tempore consequuntur eligendi?
+    </div>   
+<div id = "whiteBlock"></div>
+  <div id="leftDiv4">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est esse debitis laborum sequi aperiam ex optio, facere at. Magni voluptas beatae fuga debitis non. Debitis hic sequi pariatur maxime, veritatis saepe excepturi eum dolorum obcaecati doloremque, qui fugit vitae doloribus aperiam eos! Repellendus nemo illo itaque quas explicabo neque ipsam!<br>
+  </div>
+  <div id="rightDiv5">
+    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, aut. Eaque voluptatum fugiat quia in fuga perferendis deleniti totam odit!
+    </div>
+    <h2 id = "bottomHeader">Footer</h2>
+  </div>
+  </body>
+</html>
+
+
